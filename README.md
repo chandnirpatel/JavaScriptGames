@@ -1,0 +1,1 @@
+This body of work is the result of back and forth between me and friends aimed at increasing my working knowledge of Javascript and other front end tools.
