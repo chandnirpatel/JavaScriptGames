@@ -1,0 +1,57 @@
+<html>
+<head><title>Teach Chandni Javascript</title></head>
+
+<body>
+  <h1>Teach Chandni Javascript</h1>
+
+  <!-- Comments in HTML look like this. -->
+
+  <!--
+      All HTML files have this basic structure.
+      The data-structure that browsers render into a web-page is
+      called the DOM, or Document Object Model.
+  -->
+
+  <!--
+      You describe the initial DOM with HTML and CSS.
+      After the initial load of HTML and CSS, then it is up to
+      your Javascript to make changes to the DOM to interact with
+      the user.
+
+      We are going to start using an old-school approach, which
+      will not scale to larger apps.  Once it starts getting messy
+      we will solve it using more advanced techniques and tools.
+  -->
+
+  <h3>Problem one:</h3>
+  <p>Is Chandni awesome?: <span id="ouput"></span></p>
+
+<script type="text/javascript">
+  // Comments in Javascript look like this
+
+  // For now our javascript code will go here
+
+  var thisIsAFunction = function(parameter) {
+    // In javascript, functions are the most important things.
+  };
+
+  var thisIsAnObjectLiteral = {
+    thisIsAProperty: 'some string',
+    anotherProperty: true
+  };
+
+  var chandniIsAwesome = function() {
+    return thisIsAnObjectLiteral.anotherProperty;
+  };
+
+  // This code is executed as soon as it is loaded by the browser
+
+  if (chandniIsAwesome() === true) {
+    // This is us, manipulating the DOM
+    var outputElement = document.getElementById('ouput');
+    outputElement.innerHTML = 'Of course.';
+  }
+
+</script>
+</body>
+</html>
