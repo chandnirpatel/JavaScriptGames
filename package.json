@@ -1,0 +1,12 @@
+{
+  "name": "complimentor",
+  "version": "0.0.1",
+  "description": "An example module to illustrate the usage of a package.json",
+  "author": "Your Name <you.name@example.org>",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-karma": "*",
+    "karma-jasmine": "*",
+    "karma-phantomjs-launcher": "*"
+  }
+}

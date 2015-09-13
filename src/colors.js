@@ -9,5 +9,3 @@ var updateColors = function(colors) {
     	outputElement.innerHTML = colors[i];
 	};
 };
-
-updateColors(colors);
