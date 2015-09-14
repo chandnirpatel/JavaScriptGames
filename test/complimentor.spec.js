@@ -10,7 +10,6 @@ describe('Complimentor', function() {
     expect(typeof complimentor).toEqual('object');
     expect(typeof complimentor.splitSentence).toEqual('function');
   });
-
   // Below here are more tests, so that you can see where we are going.
   // They are disabled for now.
   xdescribe('sentence splitter should', function() {
