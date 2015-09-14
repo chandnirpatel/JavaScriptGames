@@ -49,8 +49,10 @@
 
 <!-- This causes the browser to load an external script file -->
 <script type="text/javascript" src="src/colors.js"></script>
+<script type="text/javascript" src="src/compliments.js"></script>
 
 <script type="text/javascript">
+
   // Comments in Javascript look like this
 
   // For now our javascript code will go here
@@ -77,6 +79,16 @@
   }
 
   updateColors(colors);
+
+  var selectCompliment = function(list) {
+    return list[Math.round(Math.random(0, list.length - 1))];
+  }
+
+  if (chandniIsAwesome() === true) {
+      var outputCompliment = document.getElementById('compliment');
+  outputCompliment.innerHTML =  compliments[Math.round(Math.random()*compliments.length)];
+  //selectCompliment(compliments);
+  }
 
 </script>
 </body>
