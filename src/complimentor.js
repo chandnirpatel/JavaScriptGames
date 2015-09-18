@@ -1,0 +1,3 @@
+// var Complimentor = {
+// 	splitSentence: function()
+// }

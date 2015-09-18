@@ -21,8 +21,8 @@
 
   if (chandniIsAwesome() === true) {
     // This is us, manipulating the DOM
-    var outputElement = document.getElementById('ouput');
-    outputElement.innerHTML = 'Of course.';
+    var outputElement = document.getElementById('output');
+    //document.getElementById('output').innerHTML = 'Of course.';
   }
 
   updateColors(colors);
