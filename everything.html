@@ -49,16 +49,15 @@
 
 <!-- This causes the browser to load an external script file -->
 <script type="text/javascript" src="src/problem01.js"></script>
-<script type="text/javascript" src="src/colors.js"></script>
+<script type="text/javascript" src="src/problem02.js"></script>
+<script type="text/javascript" src="src/problem03.js"></script>
 <script type="text/javascript" src="src/compliments.js"></script>
 
   <script type="text/javascript">
-
-
     // This code is executed as soon as it is loaded by the browser
     answerProblem01();
-
-    updateColors(colors);
+    answerProblem02();
+    answerProblem03();
 
     var selectCompliment = function(list) {
       return list[Math.round(Math.random(0, list.length - 1))];
@@ -66,7 +65,7 @@
 
     if (true === true) {
         var outputCompliment = document.getElementById('compliment');
-    outputCompliment.innerHTML =  compliments[Math.round(Math.random()*compliments.length)];
+        outputCompliment.innerHTML =  compliments[Math.round(Math.random()*compliments.length)];
     //selectCompliment(compliments);
     }
 

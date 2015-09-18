@@ -1,3 +1,6 @@
+var answerProblem02 = function() {
+	updateColors(colors);
+};
 
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
@@ -9,3 +12,5 @@ var updateColors = function(colors) {
     	outputElement.innerHTML = colors[i];
 	};
 };
+
+
