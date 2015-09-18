@@ -54,26 +54,10 @@
 
   <script type="text/javascript">
 
-    // Comments in Javascript look like this
-
-    // For now our javascript code will go here
-
-    var thisIsAFunction = function(parameter) {
-      // In javascript, functions are the most important things.
-    };
-
-    var thisIsAnObjectLiteral = {
-      thisIsAProperty: 'some string',
-      anotherProperty: true
-    };
-
-    var chandniIsAwesome = function() {
-      return thisIsAnObjectLiteral.anotherProperty;
-    };
 
     // This code is executed as soon as it is loaded by the browser
 
-    if (chandniIsAwesome() === true) {
+    if (true === true) {
       // This is us, manipulating the DOM
       var outputElement = document.getElementById('output');
       outputElement.innerHTML = 'Of course.';
@@ -85,7 +69,7 @@
       return list[Math.round(Math.random(0, list.length - 1))];
     }
 
-    if (chandniIsAwesome() === true) {
+    if (true === true) {
         var outputCompliment = document.getElementById('compliment');
     outputCompliment.innerHTML =  compliments[Math.round(Math.random()*compliments.length)];
     //selectCompliment(compliments);
