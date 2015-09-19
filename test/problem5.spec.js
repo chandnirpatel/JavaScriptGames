@@ -3,8 +3,20 @@ describe('Question Adder', function() {
   var questioner;
 
   beforeEach(function() {
-    document.querySelector('body').innerHTML = '<h3>Problem 1</h3><p class="question">the first question</p><p class="answer">the first answer.</p>';
     questioner = new Questioner();
+  });
+
+  it('should add a question', function() {
+      expect(document.querySelectorAll('.answer').length).toBe(0);
+
+      var theQuestion = 'Why did the chicken cross the road?'
+      var theAnswer = 'To get to the other side.';
+      questioner.addQuestion(1, theQuestion, theAnswer);
+
+      expect(document.querySelectorAll('.answer').length).toBe(1);
+      expect(document.querySelectorAll('.answer')[0].innerHTML).toBe(theAnswer);
+      expect(document.querySelectorAll('.question')[0].innerHTML).toBe(theQuestion);
+      expect(document.querySelectorAll('h3')[0].innerHTML).toBe('Problem 1');
   });
 
   it('should add a question to the page after the first one', function() {
@@ -17,6 +29,7 @@ describe('Question Adder', function() {
       expect(document.querySelectorAll('.answer').length).toBe(2);
       expect(document.querySelectorAll('.answer')[1].innerHTML).toBe(theAnswer);
       expect(document.querySelectorAll('.question')[1].innerHTML).toBe(theQuestion);
+      expect(document.querySelectorAll('h3')[1].innerHTML).toBe('Problem 2');
   });
 
   it('should add two questions to the page', function() {
@@ -29,5 +42,6 @@ describe('Question Adder', function() {
 
       expect(document.querySelectorAll('.answer').length).toBe(3);
       expect(document.querySelectorAll('.answer')[2].innerHTML).toBe(theAnswer3);
+      expect(document.querySelectorAll('h3')[2].innerHTML).toBe('Problem 3');
   });
 });
