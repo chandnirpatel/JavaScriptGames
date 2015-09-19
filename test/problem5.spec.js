@@ -10,7 +10,7 @@ describe('Question Adder', function() {
   it('should add a question', function() {
       expect(document.querySelectorAll('.answer').length).toBe(0);
 
-      var theQuestion = 'Why did the chicken cross the road?'
+      var theQuestion = 'Why did the chicken cross the road?';
       var theAnswer = 'To get to the other side.';
       questioner.addQuestion(1, theQuestion, theAnswer);
 
@@ -44,5 +44,6 @@ describe('Question Adder', function() {
       expect(document.querySelectorAll('.answer').length).toBe(3);
       expect(document.querySelectorAll('.answer')[2].innerHTML).toBe(theAnswer3);
       expect(document.querySelectorAll('h3')[2].innerHTML).toBe('Problem 3');
+      //expectation for question
   });
 });
