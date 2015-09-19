@@ -3,6 +3,7 @@ describe('Question Adder', function() {
   var questioner;
 
   beforeEach(function() {
+    document.querySelector('body').innerHTML = '';
     questioner = new Questioner();
   });
 
