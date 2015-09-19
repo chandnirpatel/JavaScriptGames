@@ -34,16 +34,16 @@ describe('Question Adder', function() {
   });
 
   it('should add two questions to the page', function() {
-      expect(document.querySelectorAll('.answer').length).toBe(1);
+      expect(document.querySelectorAll('.answer').length).toBe(2);
 
       questioner.addQuestion(2, 'Why did the chicken cross the road?', 'To get to the other side.');
 
       var theAnswer3 = "It's a great little number, but you've probably never heard of it.";
       questioner.addQuestion(3, "How many hipster's does it take to screw in a lightbulb?", theAnswer3);
 
-      expect(document.querySelectorAll('.answer').length).toBe(3);
-      expect(document.querySelectorAll('.answer')[2].innerHTML).toBe(theAnswer3);
-      expect(document.querySelectorAll('h3')[2].innerHTML).toBe('Problem 3');
+      expect(document.querySelectorAll('.answer').length).toBe(4);
+      expect(document.querySelectorAll('.answer')[3].innerHTML).toBe(theAnswer3);
+      expect(document.querySelectorAll('h3')[3].innerHTML).toBe('Problem 3');
       //expectation for question
   });
 });
