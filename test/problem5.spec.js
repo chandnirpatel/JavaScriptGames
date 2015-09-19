@@ -3,18 +3,20 @@ describe('Question Adder', function() {
   var questioner;
 
   beforeEach(function() {
-    document.querySelector('body').innerHTML = '<h3>Problem 1</h3><p class="answer">the first answer.</p>';
+    document.querySelector('body').innerHTML = '<h3>Problem 1</h3><p class="question">the first question</p><p class="answer">the first answer.</p>';
     questioner = new Questioner();
   });
 
   it('should add a question to the page after the first one', function() {
       expect(document.querySelectorAll('.answer').length).toBe(1);
 
+      var theQuestion = 'Why did the chicken cross the road?'
       var theAnswer = 'To get to the other side.';
-      questioner.addQuestion(2, 'Why did the chicken cross the road?', theAnswer);
+      questioner.addQuestion(2, theQuestion, theAnswer);
 
       expect(document.querySelectorAll('.answer').length).toBe(2);
       expect(document.querySelectorAll('.answer')[1].innerHTML).toBe(theAnswer);
+      expect(document.querySelectorAll('.question')[1].innerHTML).toBe(theQuestion);
   });
 
   xit('should add two questions to the page', function() {
