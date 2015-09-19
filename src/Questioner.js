@@ -1,3 +1,5 @@
 var Questioner = function() {
-	return {};
+	return {
+		addQuestion: function(){}
+	};
 }
