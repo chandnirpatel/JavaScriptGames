@@ -1,0 +1,3 @@
+var Questioner = function() {
+	return {};
+}
