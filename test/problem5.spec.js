@@ -19,7 +19,7 @@ describe('Question Adder', function() {
       expect(document.querySelectorAll('.question')[1].innerHTML).toBe(theQuestion);
   });
 
-  xit('should add two questions to the page', function() {
+  it('should add two questions to the page', function() {
       expect(document.querySelectorAll('.answer').length).toBe(1);
 
       questioner.addQuestion(2, 'Why did the chicken cross the road?', 'To get to the other side.');
