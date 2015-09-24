@@ -1,3 +1,7 @@
-function Complimentor() {
-	this.splitSentence = function(){};
+var Complimentor = function() {
+	return {
+		splitSentence: function(sentence){
+			return sentence.split(" ");
+		}
+	};
 }

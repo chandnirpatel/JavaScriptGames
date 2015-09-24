@@ -12,7 +12,7 @@ describe('Complimentor', function() {
   });
   // Below here are more tests, so that you can see where we are going.
   // They are disabled for now.
-  xdescribe('sentence splitter should', function() {
+  describe('sentence splitter should', function() {
     it('split a sentence into individual words', function() {
       var sentence = 'Roses are red';
 
