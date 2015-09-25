@@ -30,7 +30,7 @@ describe('Complimentor', function() {
     });
   });
 
-  xit('should choose a likely word after the first two', function() {
+  it('should choose a likely word after the first two', function() {
     var sentence1 = 'Roses are red.';
     var sentence2 = 'Violets are blue.';
 
@@ -40,7 +40,7 @@ describe('Complimentor', function() {
     expect(firstWord === 'Roses' || firstWord === 'Violets').toBe(true);
   });
 
-  xit('should choose a likely word after the first two', function() {
+  it('should choose a likely word after the first two', function() {
     var sentence1 = 'This is a sentence.'
     var sentence2 = 'This is a similar sentence.';
 

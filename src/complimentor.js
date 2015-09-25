@@ -5,6 +5,9 @@ var Complimentor = function(sentences) {
 		},
 		chooseFirst: function(){
 			return this.splitSentence(sentences[0])[0];
+		},
+		chooseNext: function(){
+			return this.splitSentence(sentences[0])[2];;
 		}
 	};
 }
