@@ -3,7 +3,9 @@ var Questioner = function() {
 		addQuestion: function(num, question, answer){
 			var answers = document.querySelectorAll('.answer');
 			if (answers.length == 0) {
-				var lastAnswer = document.body; //should I handle if a body doesn't exist?
+				// Q: should I handle if a body doesn't exist?
+				// A: In most regards Javascript code usually assumes a valid HTML document, which must always have a body element.
+				var lastAnswer = document.body;
 			} else {
 				var lastAnswer = answers[answers.length-1];
 			};

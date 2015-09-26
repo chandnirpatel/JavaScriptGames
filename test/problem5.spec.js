@@ -15,6 +15,10 @@ describe('Question Adder', function() {
       var theAnswer = 'To get to the other side.';
       questioner.addQuestion(1, theQuestion, theAnswer);
 
+      // The code currently creates a document with 2 body elements, which is invalid HTML.
+      console.log('document: ' + document.documentElement.innerHTML);
+      expect(document.querySelectorAll('body').length).toBe(1);
+
       expect(document.querySelectorAll('.answer').length).toBe(1);
       expect(document.querySelectorAll('.question').length).toBe(1);
       expect(document.querySelectorAll('.answer')[0].innerHTML).toBe(theAnswer);
